@@ -7,6 +7,10 @@ max = Math.max(maxInput.value, 2);
 
 generateNumber();
 
+if (urlParams.get("close") == "close") {
+    window.close()
+}
+
 function generateNumber() {
     max = Math.max(maxInput.value, 2);
     urlParams.set("max", max);
